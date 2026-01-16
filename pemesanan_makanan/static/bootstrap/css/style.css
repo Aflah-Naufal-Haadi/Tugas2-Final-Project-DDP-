@@ -1,0 +1,285 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #2b1d14;
+  color: #ffffff;
+}
+
+.bg-dark-cafe {
+  background-color: #2b1d14;
+}
+
+.bg-navbar {
+  background-color: #1f140d;
+}
+
+.menu-section {
+  margin-top: 110px;
+  padding-bottom: 60px;
+}
+
+
+.menu-card {
+  background-color: #3a261a;
+  border-radius: 14px;
+  overflow: hidden;
+  max-width: 320px;
+  margin: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.55);
+}
+
+
+.menu-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.menu-content {
+  padding: 16px;
+}
+
+.menu-title {
+  color: #ffcc66;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.menu-desc {
+  font-size: 0.85rem;
+  color: #e6d5c3;
+  line-height: 1.4;
+  margin-bottom: 14px;
+}
+
+
+.menu-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-price {
+  font-weight: 600;
+  color: #ffc107;
+  font-size: 0.95rem;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+  color: #2b1d14;
+  font-weight: 600;
+}
+
+.btn-warning:hover {
+  background-color: #ffb300;
+  color: #2b1d14;
+}
+
+
+.card {
+  background-color: #1f140d;
+  border: none;
+}
+
+.card label {
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+.card .form-control,
+.card .form-select,
+.card textarea {
+  background-color: #2b1d14;
+  color: #ffffff;
+  border: 1px solid #5a3b2e;
+  font-size: 0.85rem;
+}
+
+.card .form-control::placeholder,
+.card textarea::placeholder {
+  color: #cbb7a6;
+}
+
+.card .form-control:focus,
+.card .form-select:focus,
+.card textarea:focus {
+  background-color: #2b1d14;
+  color: #ffffff;
+  border-color: #ffc107;
+  box-shadow: none;
+}
+
+.card select option {
+  background-color: #2b1d14;
+  color: #ffffff;
+}
+
+
+@media (max-width: 576px) {
+  .menu-img {
+    height: 160px;
+  }
+
+  .menu-card {
+    max-width: 100%;
+  }
+}
+
+.card p {
+  color: #ffffff !important;
+  opacity: 0.9;
+}
+
+
+.gallery-section {
+  margin-top: 140px;
+  padding-bottom: 80px;
+}
+
+.gallery-card {
+  width: 100%;
+  aspect-ratio: 1 / 1;      
+  background-color: #3a261a;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.5);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.65);
+}
+
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-card:hover .gallery-img {
+  transform: scale(1.08);
+}
+
+
+
+
+.about-task {
+  font-size: 0.85rem;
+  color: #e6d5c3;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+
+.about-task-label {
+  font-weight: 700;
+  color: #ffc107; 
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+
+@media (max-width: 576px) {
+  .about-task {
+    font-size: 0.8rem;
+  }
+}
+
+
+.task-role {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #ffc107;
+  font-weight: 600;
+}
+
+
+.task-detail {
+  text-align: left;
+  margin-top: 6px;
+  padding-left: 18px;
+}
+
+
+.task-detail p {
+  position: relative;
+  font-size: 0.8rem;
+  margin-bottom: 6px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+
+.task-detail p::before {
+  content: "•";
+  position: absolute;
+  left: -14px;
+  top: 0;
+  color: #ffc107;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+
+.team-card {
+  background-color: #1f140d;
+  max-width: 320px;  
+  margin: 0 auto;    
+  border: none;
+}
+
+.team-card img {
+  height: 270px;
+  object-fit: cover;
+}
+
+
+.team-card .card-body {
+  padding: 1.4rem 1.2rem; 
+}
+
+.task-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.task-list li {
+  color: #ffc107; 
+  font-size: 0.85rem;
+  position: relative;
+  padding-left: 14px;
+  margin-bottom: 4px;
+}
+
+.task-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffc107;
+}
+
+
+
+
+
+
+
+
